@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DrawerLayoutDemo</string>
+    <string name="text_array_length">数组长度</string>
+</resources>

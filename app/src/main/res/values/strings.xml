@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">基础排序</string>
+    <string name="title_activity_quick_sort">QuickSort</string>
+    <string name="str_configs">设置参数</string>
+    <string name="str_new_array">新数组</string>
+    <string name="str_add">添加</string>
+    <string name="str_pause_sort">暂停排序</string>
+    <string name="str_step_sort">分步排序</string>
+    <string name="str_run_sort">开始</string>
+    <string name="str_tip_1">长按视图设置排序方式，默认是合并排序</string>
+    <string name="text_array_length">数组长度 :</string>
+    <string name="text_spend_time">用时 :</string>
+    <string name="text_sorter_type">类型 :</string>
+    <string name="soft_version">排序算法 V1.0</string>
+    <string name="soft_description">"演示了简单的排序算法,进行比较算法执行的快慢,能够比较直观的看到四个基本算法的执行过程</string>
+    <string name="drawer_open" />
+    <string name="drawer_close" />
+
+</resources>

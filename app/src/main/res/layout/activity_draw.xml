@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dr_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_sort_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:src="@mipmap/run"
+                    android:id="@+id/btn_start_draw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_run_sort" />
+
+                <ImageButton
+                    android:src="@mipmap/next_step"
+                    android:id="@+id/btn_step_draw"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_step_sort" />
+
+                <ImageButton
+                    android:src="@mipmap/add"
+                    android:id="@+id/btn_add_sortview"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_add" />
+
+                <ImageButton
+                    android:src="@mipmap/new_array"
+                    android:id="@+id/btn_new_array"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_new_array" />
+
+
+                <ImageButton
+                    android:src="@mipmap/setting"
+                    android:id="@+id/btn_set_sort_config"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/str_configs" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sort_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_tip_1" />
+
+            <!--sortview 容器-->
+            <LinearLayout
+                android:id="@+id/ll_sort_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+
+        <!--<include layout="@layout/view_color_settings"-->
+            <!--android:id="@+id/color_setting"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_screen_shot"
+            android:background="#323"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+        <fragment
+            android:name="com.john.jxalgorithms.ui.LeftMenu"
+            android:id="@+id/fl_left_menu"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:tag="LEFT" />
+
+
+
+</android.support.v4.widget.DrawerLayout>
